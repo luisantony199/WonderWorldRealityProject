@@ -13,18 +13,44 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- Bootstrap core CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
 
-		<!-- Wrapper -->
-			<div id="wrapper" class="divided">
+				<!-- Navigation -->
+				<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+					  <div class="container">
+							<a class="navbar-brand js-scroll-trigger" href="#page-top"></a>
+						<button class="navbar-toggler navbar-toggler-right special" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+							More
+							<i class="fa fa-bars"></i>
+						</button>
+						<div class="collapse navbar-collapse" id="navbarResponsive">
+							<ul class="navbar-nav ml-auto">
+								<li class="nav-item">
+									<a class="nav-link js-scroll-trigger" href="#first">About</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link js-scroll-trigger" href="#third">Deals</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link js-scroll-trigger" href="#footer">Contact</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</nav>
+
+				<!-- Wrapper -->
+					<div id="wrapper" class="divided">
 
 
 				<!-- One -->
 					<section class="banner style5 orient-left content-align-center image-position-right fullscreen onload-image-fade-in onload-content-fade-right color1">
 						<div class="content">
 							<h1 style="color: #66cc00">Wonder <br>World <br> Reality</h1>
-							<p class="major"><i>―Virtual reality at its wonderfullest!―</i></p>
+							<!--<p class="major"><i>―Virtual reality at its wonderfullest!―</i></p>-->
 							<ul class="actions vertical">
 								<li><a href="#first" class="icon style2 smooth-scroll-middle fa fa-angle-double-down animated"></a></li>
 							</ul>
@@ -243,7 +269,7 @@
 
 
 				<!-- Three -->
-					<section class="spotlight style1 orient-left content-align-center image-position-center invert">
+					<section class="spotlight style1 orient-left content-align-center image-position-center invert" id="third">
 						<div class="content">
 							<h1>HAPPY HOUR</h1>
 							<h2 style="color:white;">Monday - Thursday</h2>
@@ -402,19 +428,21 @@
 					</section>-->
 
 				<!-- Footer -->
-					<footer class="wrapper style1 align-center invert">
+					<footer class="wrapper style1 align-center invert" id="footer">
 						<div class="inner">
 							<h2>CONNECT WITH US!</h2>
 							<ul class="icons">
 								<li><a href="https://www.facebook.com/wonderworldreality/" target="_blank" class="button special icon style1 fa-facebook"><span>Facebook</span></a></li>
 								<li><a href="https://www.instagram.com/wonderworldreality/" target="_blank" class="button special icon style1 fa-instagram"><span>Instagram</span></a></li>
-								<li><a href="https://twitter.com/wndrwrldreality?lang=en" target="_blank" class="button special icon style1 fa-twitch"><span>Twitch</span></a></li>
+								<li><a href="https://twitter.com/wndrwrldreality?lang=en" target="_blank" class="button special icon style1 fa-twitter"><span>Twitter</span></a></li>
+								<li><a href="https://go.twitch.tv/wonderworldreality" target="_blank" class="button special icon style1 fa-twitch"><span>Twitch</span></a></li>
 								<li><a href="mailto:info@wonderworldreality.com" class="button special icon style1 fa-envelope"><span>Email</span></a></li>
 							</ul>
 							<hr>
 							<p>&copy; Wonder World Reality 2017 <br>
 							61-24 190th St, Fresh Meadows, NY 11365 <br>
 							Phone: <a href="tel:7184873924">(718) 487-3924</a></p>
+							<br><br>
 						</div>
 					</footer>
 
@@ -427,6 +455,10 @@
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+			<script src="assets/vendor/jquery/jquery.min.js"></script>
+	    <script src="assets/vendor/popper/popper.min.js"></script>
+			<script src="assets/vendor/jquery-easing/jquery.easing.min.js"></script>
 
 
 			<!--SpringBoardApp-->
