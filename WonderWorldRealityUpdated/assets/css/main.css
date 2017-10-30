@@ -8458,3 +8458,276 @@
 				align-content: center;
 				width:99%;
 			}
+
+			/*NAV 2.0*/
+			.masthead{
+				z-index: 10001;
+				position: fixed;
+				width: 100%;
+				background-color: rgba(255, 255, 255, 1);
+			}
+
+			nav a {
+			  text-decoration: none;
+			}
+
+			nav {
+			  display: flex;
+				flex: 1;
+				height: 50%;
+			}
+			nav input {
+			  display: none;
+			}
+			nav div.nav-container {
+				display: flex;
+				flex: 1;
+				justify-content: flex-end;
+
+			}
+			nav div.nav-container > div {
+				flex: 1;
+				justify-content: flex-end;
+
+
+			}
+			nav div.nav-container > div:nth-of-type(5n+1) .slide, nav div.nav-container > div:nth-of-type(5n+1) a {
+			  border-color: #8cc63f;
+			}
+			nav div.nav-container > div:nth-of-type(5n+1) .slide:hover, nav div.nav-container > div:nth-of-type(5n+1) a:hover {
+			  color: #567b24;
+			}
+			nav div.nav-container > div:nth-of-type(5n+1) .slide ~ .child-menu, nav div.nav-container > div:nth-of-type(5n+1) a ~ .child-menu {
+			  background-color: #a4d266;
+			}
+			nav div.nav-container > div:nth-of-type(5n+1) input:checked ~ label, nav div.nav-container > div:nth-of-type(5n+1) .slide.active ~ label {
+			  color: #8cc63f;
+			}
+			nav div.nav-container > div:nth-of-type(5n+2) .slide, nav div.nav-container > div:nth-of-type(5n+2) a {
+			  border-color: #ef3724;
+			}
+			nav div.nav-container > div:nth-of-type(5n+2) .slide:hover, nav div.nav-container > div:nth-of-type(5n+2) a:hover {
+			  color: #a11a0c;
+			}
+			nav div.nav-container > div:nth-of-type(5n+2) .slide ~ .child-menu, nav div.nav-container > div:nth-of-type(5n+2) a ~ .child-menu {
+			  background-color: #f26254;
+			}
+			nav div.nav-container > div:nth-of-type(5n+2) input:checked ~ label, nav div.nav-container > div:nth-of-type(5n+2) .slide.active ~ label {
+			  color: #ef3724;
+			}
+			nav div.nav-container > div:nth-of-type(5n+3) .slide, nav div.nav-container > div:nth-of-type(5n+3) a {
+			  border-color: #ffa61a;
+			}
+			nav div.nav-container > div:nth-of-type(5n+3) .slide:hover, nav div.nav-container > div:nth-of-type(5n+3) a:hover {
+			  color: #b36d00;
+			}
+			nav div.nav-container > div:nth-of-type(5n+3) .slide ~ .child-menu, nav div.nav-container > div:nth-of-type(5n+3) a ~ .child-menu {
+			  background-color: #ffba4d;
+			}
+			nav div.nav-container > div:nth-of-type(5n+3) input:checked ~ label, nav div.nav-container > div:nth-of-type(5n+3) .slide.active ~ label {
+			  color: #ffa61a;
+			}
+			nav div.nav-container > div:nth-of-type(5n+4) .slide, nav div.nav-container > div:nth-of-type(5n+4) a {
+			  border-color: #1ab1ff;
+			}
+			nav div.nav-container > div:nth-of-type(5n+4) .slide:hover, nav div.nav-container > div:nth-of-type(5n+4) a:hover {
+			  color: #0076b3;
+			}
+			nav div.nav-container > div:nth-of-type(5n+4) .slide ~ .child-menu, nav div.nav-container > div:nth-of-type(5n+4) a ~ .child-menu {
+			  background-color: #4dc2ff;
+			}
+			nav div.nav-container > div:nth-of-type(5n+4) input:checked ~ label, nav div.nav-container > div:nth-of-type(5n+4) .slide.active ~ label {
+			  color: #1ab1ff;
+			}
+			nav div.nav-container > div:nth-of-type(5n+5) .slide, nav div.nav-container > div:nth-of-type(5n+5) a {
+			  border-color: #FC1DCF;
+			}
+			nav div.nav-container > div:nth-of-type(5n+5) .slide:hover, nav div.nav-container > div:nth-of-type(5n+5) a:hover {
+			  color: #b1028d;
+			}
+			nav div.nav-container > div:nth-of-type(5n+5) .slide ~ .child-menu, nav div.nav-container > div:nth-of-type(5n+5) a ~ .child-menu {
+			  background-color: #fd4fda;
+			}
+			nav div.nav-container > div:nth-of-type(5n+5) input:checked ~ label, nav div.nav-container > div:nth-of-type(5n+5) .slide.active ~ label {
+			  color: #FC1DCF;
+			}
+			nav a, nav label {
+			  -moz-transition-property: color;
+			  -o-transition-property: color;
+			  -webkit-transition-property: color;
+			  transition-property: color;
+			  -moz-transition-duration: 0.2s;
+			  -o-transition-duration: 0.2s;
+			  -webkit-transition-duration: 0.2s;
+			  transition-duration: 0.2s;
+			  -moz-transition-timing-function: ease-in;
+			  -o-transition-timing-function: ease-in;
+			  -webkit-transition-timing-function: ease-in;
+			  transition-timing-function: ease-in;
+			}
+			nav .slide {
+			  font-size: 1em;
+				padding: 10px 0 0 20px;
+			  display: flex;
+				justify-content: center;
+			  color: #393939;
+			  border-top: 10px solid transparent;
+			  position: relative;
+				justify-content: space-between;
+			  -moz-transition-property: border-width, color;
+			  -o-transition-property: border-width, color;
+			  -webkit-transition-property: border-width, color;
+			  transition-property: border-width, color;
+			  -moz-transition-duration: 0.1s, 0.2s;
+			  -o-transition-duration: 0.1s, 0.2s;
+			  -webkit-transition-duration: 0.1s, 0.2s;
+			  transition-duration: 0.1s, 0.2s;
+			  -moz-transition-timing-function: ease-in;
+			  -o-transition-timing-function: ease-in;
+			  -webkit-transition-timing-function: ease-in;
+			  transition-timing-function: ease-in;
+			  -moz-transition-delay: 0.2s, 0s;
+			  -o-transition-delay: 0.2s, 0s;
+			  -webkit-transition-delay: 0.2s, 0s;
+			  transition-delay: 0.2s, 0s;
+			}
+			nav .slide .element {
+			  font-size: 1.25em;
+			  font-weight: 600;
+			  font-style: normal;
+			  display: block;
+			  line-height: 1;
+				justify-content: center;
+			}
+			nav .slide .name {
+			  font-size: 0.6875em;
+			 justify-content: center;
+			}
+			nav .has-child .name:after {
+			  content: "";
+			  width: 10px;
+			  height: 4px;
+			  background-image: url("http://www.elemental-shift.com/remote-assets/down-arrow.svg");
+			  display: block;
+			  position: absolute;
+			  bottom: -9px;
+			  left: 1px;
+			  background-repeat: no-repeat;
+			  -moz-transition-property: -moz-transform;
+			  -o-transition-property: -o-transform;
+			  -webkit-transition-property: -webkit-transform;
+			  transition-property: transform;
+			  -moz-transition-duration: 0.5s;
+			  -o-transition-duration: 0.5s;
+			  -webkit-transition-duration: 0.5s;
+			  transition-duration: 0.5s;
+			  -moz-transition-timing-function: ease-in;
+			  -o-transition-timing-function: ease-in;
+			  -webkit-transition-timing-function: ease-in;
+			  transition-timing-function: ease-in;
+			  -moz-transform-origin: 50% 50%;
+			  -ms-transform-origin: 50% 50%;
+			  -webkit-transform-origin: 50% 50%;
+			  transform-origin: 50% 50%;
+			}
+			nav .child-menu {
+			  display: block;
+			  position: absolute;
+			  max-height: 0;
+			  overflow: hidden;
+			  background-color: #000;
+			  width: 100%;
+			  top: 65px;
+			  left: 0;
+			  z-index: 5000;
+			  -moz-transition-property: max-height;
+			  -o-transition-property: max-height;
+			  -webkit-transition-property: max-height;
+			  transition-property: max-height;
+			  -moz-transition-duration: 0.5s;
+			  -o-transition-duration: 0.5s;
+			  -webkit-transition-duration: 0.5s;
+			  transition-duration: 0.5s;
+			  -moz-transition-timing-function: ease-in;
+			  -o-transition-timing-function: ease-in;
+			  -webkit-transition-timing-function: ease-in;
+			  transition-timing-function: ease-in;
+			}
+			nav .child-menu a {
+			  color: white;
+			  display: inline-block;
+			  padding: 15px 10px 15px 10px;
+			  font-size: 0.9375em;
+			}
+			nav input:checked ~ .child-menu {
+			  max-height: 100px;
+			  -moz-transition-property: max-height;
+			  -o-transition-property: max-height;
+			  -webkit-transition-property: max-height;
+			  transition-property: max-height;
+			  -moz-transition-duration: 0.5s;
+			  -o-transition-duration: 0.5s;
+			  -webkit-transition-duration: 0.5s;
+			  transition-duration: 0.5s;
+			  -moz-transition-timing-function: ease-in;
+			  -o-transition-timing-function: ease-in;
+			  -webkit-transition-timing-function: ease-in;
+			  transition-timing-function: ease-in;
+			}
+			nav input:checked ~ .has-child .name:after {
+			  -moz-transform: rotateX(180deg);
+			  -webkit-transform: rotateX(180deg);
+			  transform: rotateX(180deg);
+			}
+
+			@media only screen and (max-width: 768px) {
+
+			}
+			.masthead {
+				display: flex;
+				flex: auto;
+			}
+			.masthead .brand-container {
+				z-index: 10001;
+
+			}
+			.masthead .brand-container a {
+			  color: white;
+			  display: inline-flex;
+			  -moz-transition-property: all;
+			  -o-transition-property: all;
+			  -webkit-transition-property: all;
+			  transition-property: all;
+			  -moz-transition-duration: 0.2s;
+			  -o-transition-duration: 0.2s;
+			  -webkit-transition-duration: 0.2s;
+			  transition-duration: 0.2s;
+			  -moz-transition-timing-function: ease-in;
+			  -o-transition-timing-function: ease-in;
+			  -webkit-transition-timing-function: ease-in;
+			  transition-timing-function: ease-in;
+			}
+			.masthead .brand-container a img {
+				width: 50%;
+				height: 50%;
+
+				}
+			}
+
+			.masthead .brand-initials {
+			  font-size: 3.0625em;
+			  font-weight: 700;
+			  font-style: normal;
+			  display: block;
+			  line-height: 42px;
+			}
+			.masthead .brand-name {
+			  font-size: 0.8125em;
+			  text-indent: 3px;
+			  display: block;
+			}
+
+
+
+			  }
+			}
