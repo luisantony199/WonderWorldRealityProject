@@ -8464,7 +8464,7 @@
 				z-index: 10001;
 				position: fixed;
 				width: 100%;
-				background-color: rgba(255, 255, 255, 1);
+				background-color: rgba(26, 20, 35, 1);
 			}
 
 			nav a {
@@ -8570,7 +8570,7 @@
 				padding: 10px 0 0 20px;
 			  display: flex;
 				justify-content: center;
-			  color: #393939;
+			  color: white;
 			  border-top: 10px solid transparent;
 			  position: relative;
 				justify-content: space-between;
@@ -8708,8 +8708,8 @@
 			  transition-timing-function: ease-in;
 			}
 			.masthead .brand-container a img {
-				width: 50%;
-				height: 50%;
+				width: 60%;
+				height: 60%;
 
 				}
 			}
